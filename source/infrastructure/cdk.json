@@ -1,0 +1,10 @@
+{
+  "app": "npx ts-node --prefer-ts-exts bin/distributed-load-testing-on-aws.ts",
+  "context": {
+    "@aws-cdk/core:stackRelativeExports": false,
+    "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": false,
+    "solutionId": "SO0062",
+    "solutionVersion": "custom-v3.4.4",
+    "solutionName": "distributed-load-testing-on-aws"
+  }
+}

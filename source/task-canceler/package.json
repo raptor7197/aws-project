@@ -1,0 +1,32 @@
+{
+  "name": "task-canceler",
+  "version": "3.4.4",
+  "description": "Triggered by api-services lambda function, cancels ecs tasks",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aws-solutions/distributed-load-testing-on-aws"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Amazon Web Services",
+    "url": "https://aws.amazon.com/solutions"
+  },
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf node_modules package-lock.json",
+    "test": "jest lib/*.spec.js --coverage --silent"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ecs": "^3.758.0",
+    "@aws-sdk/client-dynamodb": "^3.758.0",
+    "@aws-sdk/lib-dynamodb": "^3.758.0",
+    "solution-utils": "file:../solution-utils"
+  },
+  "devDependencies": {
+    "jest": "29.7.0"
+  },
+  "engines": {
+    "node": "^20.x"
+  },
+  "readme": "./README.md"
+}
